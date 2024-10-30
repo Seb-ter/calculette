@@ -1,0 +1,492 @@
+Auteur: pu42jmd
+Date: 28.10.2024
+Entreprise: DGEP
+Description: calculette
+
+Voici les ordres du programme calculette  :
+	Afficher "Bonjour bienvenu dans la calculatrice la plus forte au monde(pas du tout)\n".
+	Allouer #continuer.
+	#continuer = 1.
+	
+	Répéter tant que #continuer ==1
+		Afficher "Veuillez choisire l'opération à réaliser(addition = 1, soustraction = 2, multiplication = 3, division = 4, inversion = 5, racine = 6, puissance = 7,pourcentage = 8)".
+		Allouer #choix.
+		Récupérer la saisie et la stocker dans #choix.
+		
+		Si #choix == 1 alors
+			Afficher "choisissez le premier chiffre ou entrez 'm' pour la mémoire ".
+			Allouer #num1.
+			Récupérer la saisie et la stocker dans #num1.
+			Si #num1=="m" alors
+				#num1 = #m.
+			?
+			Afficher "choisissez le second chiffre ou entrez 'm' pour la mémoire ".
+			Allouer #num2.
+			Récupérer la saisie et la stocker dans #num2.
+			Si #num2=="m" alors
+				#num2 = #m.
+			?
+			
+			Allouer #rep.
+			#rep = #num1 + #num2.
+			
+			Afficher "#num1 + #num2 = #rep".
+			
+			Allouer #sv.
+			Afficher "\n Voulez vous sauvegardé la reponse? ".
+			Récupérer la saisie et la stocker dans #sv.
+			Si #sv =="oui" alors
+				Allouer #m.
+				#m = #rep.
+			?
+			Allouer #bn.
+			Afficher "\n Voulez vous passer la réponse en binaire? ".
+			Récupérer la saisie et la stocker dans #bn.
+			Si #bn =="oui" alors
+				Allouer #colonne.
+				#colonne = 0.
+				Allouer #binaire.
+				Allouer #rep1.
+				Allouer #rep2.
+				#rep1 =#rep.
+				#rep2 =#rep.
+				
+				Répéter tant que #rep1>=0.9
+					Si #rep1 % 2 != 0 alors
+						#rep1 = #rep1 - 1.
+					?
+					#rep1 = #rep1 / 2.
+					#colonne = #colonne + 1.
+				>>
+				Répéter tant que #rep2>=0.9
+					#binaire = #rep2 % 2.
+					Si #rep2 % 2 != 0 alors
+						#rep2 = #rep2 - 1.
+					?
+					#rep2 = #rep2 /2.
+					Placer le curseur à la colonne #colonne.
+					Si #binaire est égal à 1 alors
+						#binaire = 1.
+					sinon
+						#binaire = 0.
+					?
+					Afficher "#binaire".
+					#colonne = #colonne -1.
+				>>
+			?
+		sinon si #choix ==2 alors
+			Afficher "choisissez le premier chiffre ou entrez 'm' pour la mémoire ".
+			Allouer #num1.
+			Récupérer la saisie et la stocker dans #num1.
+			Si #num1=="m" alors
+				#num1 = #m.
+			?
+			Afficher "choisissez le second chiffre ou entrez 'm' pour la mémoire ".
+			Allouer #num2.
+			Récupérer la saisie et la stocker dans #num2.
+			Si #num2=="m" alors
+				#num2 = #m.
+			?
+			
+			Allouer #rep.
+			#rep = #num1 - #num2.
+			
+			Afficher "#num1 - #num2 = #rep".
+			
+			Allouer #sv.
+			Afficher "\n Voulez vous sauvegardé la reponse? ".
+			Récupérer la saisie et la stocker dans #sv.
+			Si #sv =="oui" alors
+				Allouer #m.
+				#m = #rep.
+			?
+			Allouer #bn.
+			Afficher "\n Voulez vous passer la réponse en binaire? ".
+			Récupérer la saisie et la stocker dans #bn.
+			Si #bn =="oui" alors
+				Allouer #colonne.
+				#colonne = 0.
+				Allouer #binaire.
+				Allouer #rep1.
+				Allouer #rep2.
+				#rep1 =#rep.
+				#rep2 =#rep.
+				
+				Répéter tant que #rep1>=0.9
+					Si #rep1 % 2 != 0 alors
+						#rep1 = #rep1 - 1.
+					?
+					#rep1 = #rep1 / 2.
+					#colonne = #colonne + 1.
+				>>
+				Répéter tant que #rep2>=0.9
+					#binaire = #rep2 % 2.
+					Si #rep2 % 2 != 0 alors
+						#rep2 = #rep2 - 1.
+					?
+					#rep2 = #rep2 /2.
+					Placer le curseur à la colonne #colonne.
+					Si #binaire est égal à 1 alors
+						#binaire = 1.
+					sinon
+						#binaire = 0.
+					?
+					Afficher "#binaire".
+					#colonne = #colonne -1.
+				>>
+			?
+		sinon si #choix ==3 alors
+			Afficher "choisissez le premier chiffre ou entrez 'm' pour la mémoire ".
+			Allouer #num1.
+			Récupérer la saisie et la stocker dans #num1.
+			Si #num1=="m" alors
+				#num1 = #m.
+			?
+			Afficher "choisissez le second chiffre ou entrez 'm' pour la mémoire ".
+			Allouer #num2.
+			Récupérer la saisie et la stocker dans #num2.
+			Si #num2=="m" alors
+				#num2 = #m.
+			?
+			Allouer #rep.
+			#rep = #num1 * #num2.
+			
+			Afficher "#num1 * #num2 = #rep".
+			
+			Allouer #sv.
+			Afficher "\n Voulez vous sauvegardé la reponse? ".
+			Récupérer la saisie et la stocker dans #sv.
+			Si #sv =="oui" alors
+				Allouer #m.
+				#m = #rep.
+			?
+			Allouer #bn.
+			Afficher "\n Voulez vous passer la réponse en binaire? ".
+			Récupérer la saisie et la stocker dans #bn.
+			Si #bn =="oui" alors
+				Allouer #colonne.
+				#colonne = 0.
+				Allouer #binaire.
+				Allouer #rep1.
+				Allouer #rep2.
+				#rep1 =#rep.
+				#rep2 =#rep.
+				
+				Répéter tant que #rep1>=0.9
+					Si #rep1 % 2 != 0 alors
+						#rep1 = #rep1 - 1.
+					?
+					#rep1 = #rep1 / 2.
+					#colonne = #colonne + 1.
+				>>
+				Répéter tant que #rep2>=0.9
+					#binaire = #rep2 % 2.
+					Si #rep2 % 2 != 0 alors
+						#rep2 = #rep2 - 1.
+					?
+					#rep2 = #rep2 /2.
+					Placer le curseur à la colonne #colonne.
+					Si #binaire est égal à 1 alors
+						#binaire = 1.
+					sinon
+						#binaire = 0.
+					?
+					Afficher "#binaire".
+					#colonne = #colonne -1.
+				>>
+			?
+		sinon si #choix ==4 alors
+			Afficher "choisissez le premier chiffre ou entrez 'm' pour la mémoire ".
+			Allouer #num1.
+			Récupérer la saisie et la stocker dans #num1.
+			Si #num1=="m" alors
+				#num1 = #m.
+			?
+			Afficher "choisissez le second chiffre ou entrez 'm' pour la mémoire ".
+			Allouer #num2.
+			Récupérer la saisie et la stocker dans #num2.
+			Si #num2=="m" alors
+				#num2 = #m.
+			?
+			Allouer #rep.
+			#rep = #num1 / #num2.
+			
+			Afficher "#num1 / #num2 = #rep".
+			
+			Allouer #sv.
+			Afficher "\n Voulez vous sauvegardé la reponse? ".
+			Récupérer la saisie et la stocker dans #sv.
+			Si #sv =="oui" alors
+				Allouer #m.
+				#m = #rep.
+			?
+			Allouer #bn.
+			Afficher "\n Voulez vous passer la réponse en binaire? ".
+			Récupérer la saisie et la stocker dans #bn.
+			Si #bn =="oui" alors
+				Allouer #colonne.
+				#colonne = 0.
+				Allouer #binaire.
+				Allouer #rep1.
+				Allouer #rep2.
+				#rep1 =#rep.
+				#rep2 =#rep.
+				
+				Répéter tant que #rep1>=0.9
+					Si #rep1 % 2 != 0 alors
+						#rep1 = #rep1 - 1.
+					?
+					#rep1 = #rep1 / 2.
+					#colonne = #colonne + 1.
+				>>
+				Répéter tant que #rep2>=0.9
+					#binaire = #rep2 % 2.
+					Si #rep2 % 2 != 0 alors
+						#rep2 = #rep2 - 1.
+					?
+					#rep2 = #rep2 /2.
+					Placer le curseur à la colonne #colonne.
+					Si #binaire est égal à 1 alors
+						#binaire = 1.
+					sinon
+						#binaire = 0.
+					?
+					Afficher "#binaire".
+					#colonne = #colonne -1.
+				>>
+			?
+		sinon si #choix ==5 alors
+			Afficher "choisissez le chiffre ou entrez 'm' pour la mémoire ".
+			Allouer #num1.
+			Récupérer la saisie et la stocker dans #num1.
+			Si #num1=="m" alors
+				#num1 = #m.
+			
+			?
+			Allouer #rep.
+			#rep = 1 / #num1.
+			
+			Afficher "1 / #num1 = #rep".
+			
+			Allouer #sv.
+			Afficher "\n Voulez vous sauvegardé la reponse? ".
+			Récupérer la saisie et la stocker dans #sv.
+			Si #sv =="oui" alors
+				Allouer #m.
+				#m = #rep.
+			?
+			Allouer #bn.
+			Afficher "\n Voulez vous passer la réponse en binaire? ".
+			Récupérer la saisie et la stocker dans #bn.
+			Si #bn =="oui" alors
+				Allouer #colonne.
+				#colonne = 0.
+				Allouer #binaire.
+				Allouer #rep1.
+				Allouer #rep2.
+				#rep1 =#rep.
+				#rep2 =#rep.
+				
+				Répéter tant que #rep1>=0.9
+					Si #rep1 % 2 != 0 alors
+						#rep1 = #rep1 - 1.
+					?
+					#rep1 = #rep1 / 2.
+					#colonne = #colonne + 1.
+				>>
+				Répéter tant que #rep2>=0.9
+					#binaire = #rep2 % 2.
+					Si #rep2 % 2 != 0 alors
+						#rep2 = #rep2 - 1.
+					?
+					#rep2 = #rep2 /2.
+					Placer le curseur à la colonne #colonne.
+					Si #binaire est égal à 1 alors
+						#binaire = 1.
+					sinon
+						#binaire = 0.
+					?
+					Afficher "#binaire".
+					#colonne = #colonne -1.
+				>>
+			?
+		sinon si #choix ==6 alors
+			Afficher "choisissez le chiffre ou entrez 'm' pour la mémoire ".
+			Allouer #num1.
+			Récupérer la saisie et la stocker dans #num1.
+			Si #num1=="m" alors
+				#num1 = #m.
+			
+			?
+			Allouer #rep.
+			#rep = racine carrée de #num1.
+			
+			Afficher "V#num1 = #rep".
+			
+			Allouer #sv.
+			Afficher "\n Voulez vous sauvegardé la reponse? ".
+			Récupérer la saisie et la stocker dans #sv.
+			Si #sv =="oui" alors
+				Allouer #m.
+				#m = #rep.
+			?
+			Allouer #bn.
+			Afficher "\n Voulez vous passer la réponse en binaire? ".
+			Récupérer la saisie et la stocker dans #bn.
+			Si #bn =="oui" alors
+				Allouer #colonne.
+				#colonne = 0.
+				Allouer #binaire.
+				Allouer #rep1.
+				Allouer #rep2.
+				#rep1 =#rep.
+				#rep2 =#rep.
+				
+				Répéter tant que #rep1>=0.9
+					Si #rep1 % 2 != 0 alors
+						#rep1 = #rep1 - 1.
+					?
+					#rep1 = #rep1 / 2.
+					#colonne = #colonne + 1.
+				>>
+				Répéter tant que #rep2>=0.9
+					#binaire = #rep2 % 2.
+					Si #rep2 % 2 != 0 alors
+						#rep2 = #rep2 - 1.
+					?
+					#rep2 = #rep2 /2.
+					Placer le curseur à la colonne #colonne.
+					Si #binaire est égal à 1 alors
+						#binaire = 1.
+					sinon
+						#binaire = 0.
+					?
+					Afficher "#binaire".
+					#colonne = #colonne -1.
+				>>
+			?
+		sinon si #choix ==7 alors
+			Afficher "choisissez le premier chiffre ou entrez 'm' pour la mémoire ".
+			Allouer #num1.
+			Récupérer la saisie et la stocker dans #num1.
+			Si #num1=="m" alors
+				#num1 = #m.
+			?
+			Afficher "choisissez la puissance ou entrez 'm' pour la mémoire ".
+			Allouer #num2.
+			Récupérer la saisie et la stocker dans #num2.
+			Si #num2=="m" alors
+				#num2 = #m.
+			?	
+			Allouer #rep.
+			#rep = #num1 ^ #num2.
+			
+			Afficher "#num1 ^ #num2 = #rep".
+			
+			Allouer #sv.
+			Afficher "\n Voulez vous sauvegardé la reponse? ".
+			Récupérer la saisie et la stocker dans #sv.
+			Si #sv =="oui" alors
+				Allouer #m.
+				#m = #rep.
+			?
+			Allouer #bn.
+			Afficher "\n Voulez vous passer la réponse en binaire? ".
+			Récupérer la saisie et la stocker dans #bn.
+			Si #bn =="oui" alors
+				Allouer #colonne.
+				#colonne = 0.
+				Allouer #binaire.
+				Allouer #rep1.
+				Allouer #rep2.
+				#rep1 =#rep.
+				#rep2 =#rep.
+				
+				Répéter tant que #rep1>=0.9
+					Si #rep1 % 2 != 0 alors
+						#rep1 = #rep1 - 1.
+					?
+					#rep1 = #rep1 / 2.
+					#colonne = #colonne + 1.
+				>>
+				Répéter tant que #rep2>=0.9
+					#binaire = #rep2 % 2.
+					Si #rep2 % 2 != 0 alors
+						#rep2 = #rep2 - 1.
+					?
+					#rep2 = #rep2 /2.
+					Placer le curseur à la colonne #colonne.
+					Si #binaire est égal à 1 alors
+						#binaire = 1.
+					sinon
+						#binaire = 0.
+					?
+					Afficher "#binaire".
+					#colonne = #colonne -1.
+				>>
+			?
+		sinon si #choix ==8 alors
+			Afficher "choisissez le premier chiffre montrant la partie désirée ou entrez 'm' pour la mémoire ".
+			Allouer #num1.
+			Récupérer la saisie et la stocker dans #num1.
+			Si #num1=="m" alors
+				#num1 = #m.
+			?
+			Afficher "choisissez le total ou entrez 'm' pour la mémoire ".
+			Allouer #num2.
+			Récupérer la saisie et la stocker dans #num2.
+			Si #num2=="m" alors
+				#num2 = #m.
+			?
+			Allouer #rep.
+			#rep =(#num1 / #num2) *100.
+			
+			Afficher "#num1 / #num2 = #rep %".
+			
+			Allouer #sv.
+			Afficher "\n Voulez vous sauvegardé la reponse? ".
+			Récupérer la saisie et la stocker dans #sv.
+			Si #sv =="oui" alors
+				Allouer #m.
+				#m = #rep.
+			?	
+			Allouer #bn.
+			Afficher "\n Voulez vous passer la réponse en binaire? ".
+			Récupérer la saisie et la stocker dans #bn.
+			Si #bn =="oui" alors
+				Allouer #colonne.
+				#colonne = 0.
+				Allouer #binaire.
+				Allouer #rep1.
+				Allouer #rep2.
+				#rep1 =#rep.
+				#rep2 =#rep.
+				
+				Répéter tant que #rep1>=0.9
+					Si #rep1 % 2 != 0 alors
+						#rep1 = #rep1 - 1.
+					?
+					#rep1 = #rep1 / 2.
+					#colonne = #colonne + 1.
+				>>
+				Répéter tant que #rep2>=0.9
+					#binaire = #rep2 % 2.
+					Si #rep2 % 2 != 0 alors
+						#rep2 = #rep2 - 1.
+					?
+					#rep2 = #rep2 /2.
+					Placer le curseur à la colonne #colonne.
+					Si #binaire est égal à 1 alors
+						#binaire = 1.
+					sinon
+						#binaire = 0.
+					?
+					Afficher "#binaire".
+					#colonne = #colonne -1.
+				>>
+			?
+		?
+		Afficher "\nVoulez vous continuez(oui1 ou non2)? ".
+		Récupérer la saisie et la stocker dans #continuer.
+	>>
+Fin de la transmission.
