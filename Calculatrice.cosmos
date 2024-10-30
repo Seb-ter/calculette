@@ -1,0 +1,68 @@
+Auteur: py17xdi
+Date: 28.10.2024
+Entreprise: DGEP
+Description: Calculatrice
+
+Voici les ordres du programme Calculatrice  :
+\\Nikita se pencha pour un baisé mais se bloca contre l'aileron avant de f1 qu'est le nez de giaco, elle devint aveugle, et giaco parti dans son winter arc pour completer sa transformation en Vegeta.	
+	Afficher "Bienvenue dans la Calculatrice".
+	Répéter 5x
+		Créer une zone mémoire #nombre.
+		Afficher "\nEntrez votre nombre :\n".
+		Créer une zone mémoire #resultatUtilisable.
+		Créer une zone mémoire #touchePressee.
+		Créer une zone mémoire #m.
+		Créer une zone mémoire #resultat.
+		#resultatUtilisable = #m.
+		
+			Récupérer la saisie et la stocker dans #nombre.
+	
+			Afficher "1 = addition, 2 = soustraction, 3 = multiplication, 4 = division, 5 = racine, 6 = puissance, 7 = pourcentage, 8 = inversion".
+			Créer une zone mémoire #choix.
+			Afficher "\nEntrez votre choix :\n".
+			Récupérer la saisie et la stocker dans #choix.
+	
+			Créer une zone mémoire #nombre2.
+			Afficher "Entrez votre 2eme nombre :".
+			Récupérer la saisie et la stocker dans #nombre2.
+			
+				Si #choix vaut 1 alors
+					#resultat = #nombre + #nombre2.
+					Afficher "#nombre + #nombre2 = #resultat".
+					Récupérer la saisie et la stocker dans la zone mémoire nommée #resultatUtilisable.
+				sinon si #choix vaut 2 alors
+					#resultat = #nombre - #nombre2.
+					Afficher "#nombre - #nombre2 = #resultat".
+					Récupérer la saisie et la stocker dans la zone mémoire nommée #resultatUtilisable.
+				sinon si #choix vaut 3 alors
+					#resultat = #nombre * #nombre2.
+					Afficher "#nombre * #nombre2 = #resultat".
+					Récupérer la saisie et la stocker dans la zone mémoire nommée #resultatUtilisable.
+				sinon si #choix vaut 4 alors
+					#resultat = #nombre / #nombre2.
+					Afficher "#nombre / #nombre2 = #resultat".
+					Récupérer la saisie et la stocker dans la zone mémoire nommée #resultatUtilisable.
+				sinon si #choix vaut 5 alors
+					#resultat = racine carrée de #nombre.
+					Afficher "#resultat".
+					Récupérer la saisie et la stocker dans la zone mémoire nommée #resultatUtilisable.
+				sinon si #choix vaut 6 alors
+					#resultat = #nombre ^ #nombre2.
+					Afficher "#nombre ^ #nombre2 = #resultat".
+					Récupérer la saisie et la stocker dans la zone mémoire nommée #resultatUtilisable.
+				sinon si #choix vaut 7 alors
+					#resultat = #nombre / 100.
+					Afficher "#resultat".
+					Récupérer la saisie et la stocker dans la zone mémoire nommée #resultatUtilisable.
+				sinon si #choix vaut 8 alors
+					#resultat = 1 / #nombre.
+					Afficher "1 / #nombre = #resultat".
+					Récupérer la saisie et la stocker dans la zone mémoire nommée #resultatUtilisable.
+				?
+				
+			Afficher "Voulez vous refaire ou utiliser m ?".
+				 		
+	>>
+	
+		 
+Fin de la transmission.
